@@ -1,0 +1,25 @@
+.window {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 400px;
+    height: 300px;
+}
+
+.title-bar {
+    background-color: #df7171;
+    cursor: grab;
+    user-select: none;
+    padding: 10px;
+}
+
+.title-bar:active {
+    cursor: grabbing;
+}
+.file_explorer {
+    height: 300px;
+    width: 40%;
+    background-color: aliceblue;
+    box-shadow: 1px black solid ;
+    
+}

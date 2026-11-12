@@ -1,0 +1,125 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../public/desktop_bg.jpeg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+}
+
+.bottomBar{
+
+    height: 50px;
+    background-color: rgba(212, 208, 208, 0.208);
+    position: absolute ; 
+    bottom: 0;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+    border:2px rgba(234, 234, 234, 0.272) solid;
+}
+
+
+.bottomBar .item:hover{
+    cursor: pointer;
+}
+
+
+
+.bottomBar .item{
+    padding: 2px;
+    width: fit-content;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+
+.bottomBar .file_exp_img {
+    background-image: url("../public/file_explo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    
+}
+.bottomBar .calc_img {
+    background-image: url("../public/calc.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    
+}
+.bottomBar .terminal{
+    background-color: black;
+}
+.bottomBar .terminal_img {
+    background-image: url("../public/terminal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    
+}
+.bottomBar .note_pad{
+    background-color: transparent;
+}
+.bottomBar .note_pad {
+    background-image: url("../public/note_pad.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    
+}
+
+
+.bottomBar .settings{
+    background-color: transparent;
+}
+.bottomBar .settings {
+    background-image: url("../public/settings.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 32px;
+    width: 32px;
+    
+}
+
+#datetime {
+    color: white;
+    width: fit-content;
+    float: right;
+    margin-right: 16px;
+    font-size: 14px;
+}
+#datetime :nth-child(1){
+    text-align: right;
+}
+
+
+.file_explorer {
+    display: none;
+    
+}
+
+.file_explorer {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.file_explorer.hidden {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+}
